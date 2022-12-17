@@ -76,7 +76,7 @@ $(".clearEvent").on("click", function () {
 
 //clear data function, clears allnote array, all rows and stores empty array in local storage
 function cleardata() {
-    var confirmDelete = confirm("Are you sure you want to clear all data?");
+    var confirmDelete = confirm("Are you sure you want to clear all Events?");
     if (confirmDelete == true) {
         allEvents = ["", "", "", "", "", "", "", "", "", "", ""];
         localStorage.setItem('allEvents', JSON.stringify(allEvents));
@@ -92,7 +92,7 @@ function checkDay() {
     }
     else if (currentDayCheck !== dateSet) {
         localStorage.setItem('date', currentDayCheck);
-        var confirmNewDay = confirm("It's a new day, would you like to clear your calendar?")
+        var confirmNewDay = confirm("It's a new day, would you like to clear events from your calendar?")
         if (confirmNewDay == true) {
             cleardata()
             localStorage.setItem('date', currentDayCheck);
