@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dan;s Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Dan's Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 hour">
+          &lt9AM
+        </div>
+        <textarea class="col-lg-10 textarea 8AM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="0">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          9AM
+        </div>
+        <textarea class="col-lg-10 textarea 9AM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="1">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          10AM
+        </div>
+        <textarea class="col-lg-10 textarea 10AM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="2">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          11AM
+        </div>
+        <textarea class="col-lg-10 textarea 11AM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="3">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          12PM
+        </div>
+        <textarea class="col-lg-10 textarea 12PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="4">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          1PM
+        </div>
+        <textarea class="col-lg-10 textarea 1PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="5">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          2PM
+        </div>
+        <textarea class="col-lg-10 textarea 2PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="6">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          3PM
+        </div>
+        <textarea class="col-lg-10 textarea 3PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="7">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          4PM
+        </div>
+        <textarea class="col-lg-10 textarea 4PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="8">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          5PM
+        </div>
+        <textarea class="col-lg-10 textarea 5PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="9">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+          &gt6PM
+        </div>
+        <textarea class="col-lg-10 textarea 6PM"></textarea>
+        <div class="col-lg-1">
+          <button type="button" class="saveBtn" data-index="10">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2 bottom">
+          <button type="button" class="saveEvent">Save All</button><br><br>
+          <button type="button" class="clearEvent">Clear All</button>
+        </div>
+        <div class="col-lg-5"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
